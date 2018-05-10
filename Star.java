@@ -24,7 +24,7 @@ public class Star implements Network {
                 return v;
             }
         }
-        throw new RuntimeException("Could not find vertex" + destinationName);
+        throw new VertexNotFoundException("Could not find vertex" + destinationName);
     }
 
     @Override
